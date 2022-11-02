@@ -27,7 +27,7 @@ namespace CoreWebAPI.Controllers
             var tokenKey = Encoding.ASCII.GetBytes("this is my custom Secret key for authentication");
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]
+                Subject = new ClaimsIdentity(new Claim[] 
                 {
                     new Claim(ClaimTypes.Name, uc.uname)
                 }),
